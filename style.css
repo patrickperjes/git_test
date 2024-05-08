@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format('truetype');
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format('truetype');
+    /* src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype'); */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: #cacaca;
+    color: #f9faf8;
+}
+.container {
+    background-color: #1f2937;
+    margin: 100px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    /* height: 400px; */
+    padding: 15px;
+    text-align: center;
+
+}
+.container .p {
+    text-align: center;
+    color: #f9faf8;
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+}
+.score {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #054664;
+}
+#game-log {
+    text-align: center;
+    font-size: 36px;
+    color: #3882f6;
+}
+.move-display {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
+}
+.btn {
+    border: none;
+    padding: 5px 10px;
+    font-size: 30px;
+    color: #f9faf8;
+    background-color: #3882f6;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.btn:hover {
+    background-color: #c91971;
+    color: white;
+}
+.btns {
+    text-align: center;
+    padding: 10px;
+}
+.btns p {
+    font-size: 20px;
+    padding: 10px;
+}
+#play-again {
+    border: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color:white;
+    display: none;
+    cursor: pointer;
+    margin: 1px auto;
+}
+#play-again:hover {
+    background-color: #ffa600;
+}
+.player-score {
+    background-color: #fff;
+    height: 90px;
+    width: 110px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.player-score span{
+    font-size: 40px;
+}
+
+@media screen and (max-width: 430px){
+    .container {
+        margin: 100 10px;
+    }
+    .btns{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 700px){
+    .container {
+        margin: 100px 10px;
+    }
+}

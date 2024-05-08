@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Games</title>
+    <title>ROCK | PAPER | SCISSORS</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Rock, Paper, Scissors with Computer</h1>
+        <p class="p">First get 5 Score, Win the game!</p>
+
+        <div class="score">
+            <div class="player-score">
+                <p id="player-name">Player</p>
+                <strong><span id="player-score">0</span></strong>
+            </div>
+            <div class="player-score">
+            <p>Computer</p>
+            <strong><span id="computer-score">0</span></strong>
+            </div>
+        </div>
+        <h2 id="game-log"></h2>
+        <div class="move-display">
+            <p id="player-move"></p>
+            <p style="color: #ffae00;">VS</p>
+            <p id="computer-move"></p>
+        </div>
+        <div class="btns">
+            <p>Choose you move, Rock, Paper or Scissors?</p>
+            <button class="your-button-selector btn" id="paper">Paper</button>
+            <button class="your-button-selector btn" id="rock">Rock</button>
+            <button class="your-button-selector btn" id="scissors">Scissors</button>
+        </div>
+        <button id="play-again">Play Again?</button>
+
+    <p style="color: #ffffff65;">Coded and Designed by: <i>John Patrick L. Perjes</i></p>
+
+    </div>
 </body>
 </html>
